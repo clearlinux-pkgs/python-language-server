@@ -1,5 +1,5 @@
 PKG_NAME := python-language-server
-URL = https://files.pythonhosted.org/packages/b6/98/6e88400758b3af07d29f5e1b175495e229284bdc9889d62a046c58efe1df/python-language-server-0.33.3.tar.gz
+URL = https://files.pythonhosted.org/packages/33/5e/1e890e540a3b82e3a2621590e630fb5e8346ee0e1e763fd0ac011f6419e0/python-language-server-0.34.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
