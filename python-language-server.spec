@@ -4,7 +4,7 @@
 #
 Name     : python-language-server
 Version  : 0.35.1
-Release  : 13
+Release  : 14
 URL      : https://files.pythonhosted.org/packages/06/64/580c8ed69aaa764a842473a79a9ba45772fea2511674de13195cf143e7c0/python-language-server-0.35.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/06/64/580c8ed69aaa764a842473a79a9ba45772fea2511674de13195cf143e7c0/python-language-server-0.35.1.tar.gz
 Summary  : Python Language Server for the Language Server Protocol
