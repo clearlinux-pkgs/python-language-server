@@ -4,7 +4,7 @@
 #
 Name     : python-language-server
 Version  : 0.36.2
-Release  : 21
+Release  : 22
 URL      : https://files.pythonhosted.org/packages/66/30/0c31b052ede62bbeddf4110db57c78d3c704506178caa18b2f0be2271293/python-language-server-0.36.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/66/30/0c31b052ede62bbeddf4110db57c78d3c704506178caa18b2f0be2271293/python-language-server-0.36.2.tar.gz
 Summary  : Python Language Server for the Language Server Protocol
@@ -37,6 +37,7 @@ BuildRequires : pylint
 BuildRequires : python-jsonrpc-server
 BuildRequires : rope
 BuildRequires : ujson
+Patch1: deps.patch
 
 %description
 ======================
@@ -71,11 +72,6 @@ python components for the python-language-server package.
 Summary: python3 components for the python-language-server package.
 Group: Default
 Requires: python3-core
-Provides: pypi(python_language_server)
-Requires: pypi(jedi)
-Requires: pypi(pluggy)
-Requires: pypi(python_jsonrpc_server)
-Requires: pypi(ujson)
 
 %description python3
 python3 components for the python-language-server package.
@@ -84,13 +80,14 @@ python3 components for the python-language-server package.
 %prep
 %setup -q -n python-language-server-0.36.2
 cd %{_builddir}/python-language-server-0.36.2
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1607732643
+export SOURCE_DATE_EPOCH=1616687503
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
