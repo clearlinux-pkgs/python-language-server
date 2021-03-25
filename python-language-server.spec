@@ -25,6 +25,8 @@ Requires: pylint
 Requires: python-jsonrpc-server
 Requires: rope
 Requires: ujson
+Provides: pypi(python_language_server)
+
 BuildRequires : buildreq-distutils3
 BuildRequires : flake8
 BuildRequires : jedi
